@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+
+        <title>Form - Crie sua conta ou entre em uma exixtente</title>
+
+        <!-- --- Require Meta Tags --- -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            
+        <!-- css bootStrap/only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+        <!-- bootstrap icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+        <!-- javascripts bootStrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+        <!-- style sheets -->
+        <link rel="stylesheet" href="./fonts.css">
+        <link rel="stylesheet" href="./app.css">
+
+        <!-- ---- Scripts Sheets --- -->
+        <script src="./app/components/form control.js" defer></script>
+
+        <!-- boxIcons -->
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+
+    </head>
+    <body>
+        <!-- --- Components --- -->
+        <!-- --- Container Main --- -->
+        <section class="container_form">
+            <!-- --- Options --- -->
+            <header class="header_form_container">
+                <h1 class="option_btn">Login</h1>
+                <h1 class="option_btn">Register</h1>
+            </header>
+            <!-- --- Container form login (Main) ---- -->
+            <form class="container form_login">
+                <article class="container_input">
+                    <label for="username">Username</label>
+                    <input id="username" type="text" placeholder="Digite seu username" name="username" class="input_value">
+                </article>
+                <article class="container_input">
+                    <label for="password">Password</label>
+                    <input id="password" type="password" placeholder="Digite sua senha" name="password" class="input_value">
+                    <h4 id="showHidden" class="msg_showHidden">
+                        Show Password
+                        <i class="bi bi-eye-fill"></i>
+                    </h4>
+                    <h4 class="container_error">
+                        <i class="bi bi-exclamation-triangle-fill"></i>
+                        <p id="msg">Senha ou usuario inválido!</p>
+                    </h4>
+                </article>
+                <article class="container_input">
+                    <button type="submit" class="btn_submit">
+                        Login
+                    </button>
+                    <a href="#" class="msg_showHidden">
+                        Forgot Password?
+                    </a>
+                </article>
+            </form>
+            <!-- --- Container form register ---- -->
+            <form class="container form_register">
+                <form class="container form_login">
+                    <article class="container_input">
+                        <label for="username">Username</label>
+                        <input id="username" type="text" placeholder="Digite seu username" name="username" class="input_value">
+                    </article>
+                    <article class="container_input">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" placeholder="Digite seu email" name="email" class="input_value">
+                    </article>
+                    <article class="container_input">
+                        <label for="password">Password</label>
+                        <input id="password" type="password" placeholder="Digite sua senha" name="password" class="input_value">
+                    </article>
+                </form>
+            </form>
+        </section>
+    </body>
+</html>
